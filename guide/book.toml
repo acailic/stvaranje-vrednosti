@@ -10,9 +10,9 @@ edition = "2018"
 [output.html]
 smart-punctuation = true
 mathjax-support = true
-site-url = "/mdBook/"
-git-repository-url = "https://github.com/rust-lang/mdBook/tree/master/guide"
-edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
+site-url = "/stvaranje-vrednosti/"
+git-repository-url = "https://github.com/acailic/stvaranje-vrednosti"
+edit-url-template = "https://github.com/acailic/stvaranje-vrednosti/edit/main/guide/{path}"
 hash-files = true
 
 [output.html.playground]
