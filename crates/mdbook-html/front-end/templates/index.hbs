@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="{{ resource "css/variables.css" }}">
         <link rel="stylesheet" href="{{ resource "css/general.css" }}">
         <link rel="stylesheet" href="{{ resource "css/chrome.css" }}">
+        <link rel="stylesheet" href="{{ resource "css/tts.css" }}">
         {{#if print_enable}}
         <link rel="stylesheet" href="{{ resource "css/print.css" }}" media="print">
         {{/if}}
@@ -71,6 +72,7 @@
                 {{#if search_enabled}}
                 <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
                 {{/if}}
+                <p>Press <kbd>Alt</kbd> + <kbd>R</kbd> to toggle read aloud</p>
                 <p>Press <kbd>?</kbd> to show this help</p>
                 <p>Press <kbd>Esc</kbd> to hide this help</p>
             </div>
@@ -162,6 +164,11 @@
                             {{fa "solid" "magnifying-glass"}}
                         </button>
                         {{/if}}
+                        <button id="mdbook-tts-toggle" class="icon-button" type="button" title="Read page aloud (Alt+R)" aria-label="Read page aloud" aria-keyshortcuts="Alt+R">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+                                <path d="M256 80C141.1 80 48 173.1 48 288s93.1 208 208 208 208-93.1 208-208S370.9 80 256 80zm83.8 211.9l-109.4 61.5c-7.7 4.3-17.4-.9-17.4-9.4V236.4c0-8.5 9.7-13.7 17.4-9.4l109.4 61.5c7.5 4.2 7.5 14.6 0 18.8z"/>
+                            </svg>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">{{ book_title }}</h1>
@@ -245,6 +252,15 @@
                 </div>
             </div>
 
+            <!-- Text-to-Speech Controls -->
+            <div id="mdbook-tts-controls">
+                <div class="tts-control-group">
+                    <span class="tts-control-label">Speed:</span>
+                    <input type="range" id="mdbook-tts-speed" min="0.5" max="2" step="0.1" value="1.0" aria-label="Speech speed">
+                    <span id="mdbook-tts-speed-value">1.0x</span>
+                </div>
+            </div>
+
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 {{#if previous}}
                     <a rel="prev" href="{{ path_to_root }}{{previous.link}}" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
@@ -323,6 +339,7 @@
         <script src="{{ resource "clipboard.min.js" }}"></script>
         <script src="{{ resource "highlight.js" }}"></script>
         <script src="{{ resource "book.js" }}"></script>
+        <script src="{{ resource "tts.js" }}"></script>
 
         <!-- Custom JS scripts -->
         {{#each additional_js}}

@@ -29,6 +29,8 @@ static TOMORROW_NIGHT_CSS: &[u8] = include_bytes!("../../front-end/css/tomorrow-
 static HIGHLIGHT_CSS: &[u8] = include_bytes!("../../front-end/css/highlight.css");
 static AYU_HIGHLIGHT_CSS: &[u8] = include_bytes!("../../front-end/css/ayu-highlight.css");
 static CLIPBOARD_JS: &[u8] = include_bytes!("../../front-end/js/clipboard.min.js");
+static TTS_CSS: &[u8] = include_bytes!("../../front-end/css/tts.css");
+static TTS_JS: &[u8] = include_bytes!("../../front-end/js/tts.js");
 
 /// The `Theme` struct should be used instead of the static variables because
 /// the `new()` method will look if the user has a theme directory in their
@@ -58,6 +60,8 @@ pub struct Theme {
     pub(crate) ayu_highlight_css: Vec<u8>,
     pub(crate) highlight_js: Vec<u8>,
     pub(crate) clipboard_js: Vec<u8>,
+    pub(crate) tts_css: Vec<u8>,
+    pub(crate) tts_js: Vec<u8>,
 }
 
 impl Theme {
@@ -100,6 +104,8 @@ impl Theme {
                     theme_dir.join("ayu-highlight.css"),
                     &mut theme.ayu_highlight_css,
                 ),
+                (theme_dir.join("css/tts.css"), &mut theme.tts_css),
+                (theme_dir.join("tts.js"), &mut theme.tts_js),
             ];
 
             let load_with_warn = |filename: &Path, dest: &mut Vec<u8>| {
@@ -220,6 +226,8 @@ impl Default for Theme {
             ayu_highlight_css: AYU_HIGHLIGHT_CSS.to_owned(),
             highlight_js: HIGHLIGHT_JS.to_owned(),
             clipboard_js: CLIPBOARD_JS.to_owned(),
+            tts_css: TTS_CSS.to_owned(),
+            tts_js: TTS_JS.to_owned(),
         }
     }
 }
@@ -277,6 +285,8 @@ mod tests {
             "highlight.css",
             "ayu-highlight.css",
             "clipboard.min.js",
+            "css/tts.css",
+            "tts.js",
         ];
 
         let temp = TempFileBuilder::new().prefix("mdbook-").tempdir().unwrap();
@@ -311,6 +321,8 @@ mod tests {
             ayu_highlight_css: Vec::new(),
             highlight_js: Vec::new(),
             clipboard_js: Vec::new(),
+            tts_css: Vec::new(),
+            tts_js: Vec::new(),
         };
 
         assert_eq!(got, empty);

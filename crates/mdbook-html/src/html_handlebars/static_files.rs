@@ -61,6 +61,8 @@ impl StaticFiles {
         this.add_builtin("ayu-highlight.css", &theme.ayu_highlight_css);
         this.add_builtin("highlight.js", &theme.highlight_js);
         this.add_builtin("clipboard.min.js", &theme.clipboard_js);
+        this.add_builtin("css/tts.css", &theme.tts_css);
+        this.add_builtin("tts.js", &theme.tts_js);
         if theme.fonts_css.is_none() {
             this.add_builtin("fonts/fonts.css", theme::fonts::CSS);
             for (file_name, contents) in theme::fonts::LICENSES.iter() {
@@ -292,6 +294,8 @@ mod tests {
             toc_html: Vec::new(),
             fonts_css: None,
             font_files: Vec::new(),
+            tts_css: Vec::new(),
+            tts_js: Vec::new(),
         };
         let temp_dir = TempDir::with_prefix("mdbook-").unwrap();
         let reference_js = Path::new("static-files-test-case-reference.js");
