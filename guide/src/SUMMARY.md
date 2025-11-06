@@ -43,7 +43,7 @@
     - [Izgradnja zajednice](chapter_06_mentorstvo_podrska.md#izgradnja-zajednice)
     - [Upravljanje učinkom](chapter_06_mentorstvo_podrska.md#upravljanje-ucinkom)
 
------------
+---
 
-[Zaključak](conclusion.md)
-[Izvori i reference](references.md)
+- [Zaključak](conclusion.md)
+- [Izvori i reference](references.md)
