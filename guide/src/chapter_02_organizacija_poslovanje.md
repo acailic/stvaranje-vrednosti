@@ -4,21 +4,87 @@ Ova oblast kompetencija pokriva veštine potrebne za efikasno vođenje organizac
 
 ## Menadžment i upravljanje operacijama
 
-**Snažno operativno upravljanje** je kičma svakog uspešnog biznisa. Ono uključuje dizajniranje efikasnih procesa, mudro upravljanje resursima i kontinuirano unapređivanje radnog toka. Lideri vešti u operacijama često primenjuju metodologije kao što su Lean ili Six Sigma da eliminišu rasipanje i optimizuju produktivnost. Uticaj dobrog upravljanja operacijama je značajan – na primer, organizacije koje naglašavaju operativnu izvrsnost rasipaju daleko manje resursa. Studije pokazuju da loše upravljanje projektima i procesima može uzrokovati da kompanije izgube do 12% svojih resursa, trošak koji većina biznisa ne može da priušti.
+**Snažno operativno upravljanje** je kičma svakog uspešnog biznisa. Ono uključuje dizajniranje efikasnih procesa, mudro upravljanje resursima i kontinuirano unapređivanje radnog toka. Lideri vešti u operacijama često primenjuju metodologije kao što su Lean ili Six Sigma da eliminišu rasipanje i optimizuju produktivnost.
 
-Da razvijete operativne veštine, trebalo bi da naučite o mapiranju procesa i metrikama performansi. Počnite identifikacijom uskih grla u vašim trenutnim radnim tokovima i razmišljanjem o rešenjima (možda koristeći alate kao što je mapiranje toka vrednosti). Takođe, upoznajte se sa osnovama upravljanja projektima (pošto operacije često uključuju nadgledanje projekata ili inicijativa).
+**Uticaj dobrog upravljanja operacijama:**
 
-Mnogi nalaze da dobijanje sertifikacije kao što je Lean Six Sigma Green Belt ili PMP (Project Management Professional) jača njihov operativni set veština pružanjem formalnih okvira. Takođe možete tražiti rotacije ili privremene zadatke u ulogama koje su fokusirane na operacije (kao što su lanac snabdevanja, proizvodnja ili logistika) da dobijete praktično iskustvo. Mentori u ovoj oblasti mogu uključivati iskusnog COO-a ili operativnog menadžera koji vas može naučiti balansiranju kvaliteta, troškova i brzine. Oni takođe mogu pružiti vođenje o implementaciji inicijativa za unapređenje i rešavanju uobičajenih operativnih izazova (npr. problemi sa dobavljačima, kontrola zaliha, skaliranje procesa kako biznis raste).
+Organizacije koje naglašavaju operativnu izvrsnost (process excellence) rasipaju daleko manje resursa. **Studije pokazuju da loše upravljanje projektima i procesima može uzrokovati da kompanije izgube do 12% svojih resursa** – trošak koji većina biznisa ne može da priušti. Sa druge strane, efikasno upravljanje operacijama povećava profitabilnost i zadovoljstvo korisnika, i kreira stabilnu osnovu za rast.
+
+**Kako razviti operativne veštine:**
+
+Da razvijete operativne veštine, trebalo bi da:
+
+1. **Naučite o mapiranju procesa i metrikama performansi**:
+   - Identifikujte uska grla u vašim trenutnim radnim tokovima
+   - Koristite alate kao što je **mapiranje toka vrednosti** (Value Stream Mapping)
+   - Razmislite o rešenjima za eliminaciju rasipanja
+
+2. **Upoznajte se sa osnovama upravljanja projektima** – Operacije često uključuju nadgledanje projekata ili inicijativa
+
+3. **Dobijte relevantne sertifikacije**:
+   - **Lean Six Sigma Green Belt** za metodologije unapređenja procesa
+   - **PMP (Project Management Professional)** za formalne okvire upravljanja projektima
+
+4. **Praktično iskustvo**:
+   - Tražite rotacije ili privremene zadatke u ulogama fokusiranim na operacije
+   - Oblasti: lanac snabdevanja, proizvodnja, logistika
+
+5. **Obuka i radionice**:
+   - Upisujte radionice fokusirane na upravljanje operacijama
+   - Koristite online kurseve koji simuliraju operativne odluke (poslovne simulacije)
+
+**Uloga mentora:**
+
+Mentori u ovoj oblasti mogu uključivati iskusnog **COO-a ili operativnog menadžera** koji vas može naučiti:
+- Balansiranju kvaliteta, troškova i brzine
+- Implementaciji inicijativa za unapređenje
+- Rešavanju uobičajenih operativnih izazova:
+  - Problemi sa dobavljačima
+  - Kontrola zaliha
+  - Skaliranje procesa kako biznis raste
+
+**Cilj:** Kultivisati način razmišljanja fokusiran na efikasnost i rešavanje problema. Kada se dobro uradi, efikasno upravljanje operacijama povećava profitabilnost i zadovoljstvo korisnika, i kreira stabilnu osnovu za rast.
 
 ## Prodajne veštine
 
 Čak i ako niste u direktnoj prodajnoj ulozi, **prodajne veštine** su fundamentalne za liderstvo – jer se one zapravo svode na veštinu uticaja i ubeđivanja. Lideri "prodaju" ideje svojim timovima svakodnevno, bilo da je to dobijanje podrške za novu inicijativu ili inspirisanje ljudi da daju najbolje od sebe. Ključne kompetencije vezane za prodaju uključuju aktivno slušanje da zaista razumete potrebe drugih, efikasnu komunikaciju vrednosti, rukovanje prigovorima ili otporom, i zatvaranje posvećenosti (dobijanje od drugih da se slože oko pravca delovanja).
 
-Zapravo, jedan liderski kouč je primetio da "lideri ne samo da upravljaju zadacima – oni inspirišu ljude da ih prate u nepoznato. A to zahteva prodajne veštine, u ljudskom smislu: duboko slušanje, slikanje slike onoga što je moguće, i dobijanje posvećenosti."
+**Perspektiva liderstva:**
 
-Da praktikujete prodajne veštine, počnite osnoživanjem vašeg slušanja i empatije – napravite naviku postavljanja otvorenih pitanja i sumiranja onoga što čujete kako biste osigurali razumevanje. Takođe, radite na svojoj sposobnosti pripovedanja; formulisanje vaše vizije ili zahteva kao ubedljive priče može je učiniti ubedljivijom. Na primer, umesto samo instruisanja tima o zadatku, objasnite "zašto" iza toga na način koji se povezuje sa njihovim motivacijama.
+Zapravo, jedan liderski kouč je primetio: **"Lideri ne samo da upravljaju zadacima – oni inspirišu ljude da ih prate u nepoznato. A to zahteva prodajne veštine, u ljudskom smislu: duboko slušanje, slikanje slike onoga što je moguće, i dobijanje posvećenosti."**
 
-Još jedan savet: proučavajte osnove tehnika pregovaranja, pošto će vam one pomoći i u eksternoj prodaji i u internom uticaju (kao što je pregovaranje o resursima za vaš projekat). Što se tiče formalnog razvoja, pohađanje prodajne obuke (čak i osnovnog kursa konsultativne prodaje) može biti otvaranje očiju, pošto uči rukovanju prigovorima i razumevanju psihologije kupaca – veštine jednako primenljive kada "prevazilazite otpor" unutar vašeg tima.
+**Kako praktično razviti prodajne veštine:**
+
+1. **Osnovni slušanje i empatija**:
+   - Napravite naviku postavljanja otvorenih pitanja
+   - Sumirajte ono što čujete da osigurate razumevanje
+   - Slušajte da razumete, ne da odgovorite
+
+2. **Razvijte sposobnost pripovedanja (storytelling)**:
+   - Formulišite vašu viziju ili zahtev kao ubedljivu priču
+   - Umesto samo instruisanja tima, objasnite "zašto" iza toga
+   - Povežite se sa njihovim motivacijama
+
+3. **Proučavajte tehnike pregovaranja**:
+   - Pomoći će vam i u eksternoj prodaji i u internom uticaju
+   - Korisno za pregovaranje o resursima za vaš projekat
+
+4. **Formalna obuka**:
+   - Pohađajte prodajnu obuku (čak i osnovni kurs konsultativne prodaje)
+   - Učite rukovanje prigovorima
+   - Razumejte psihologiju kupaca/stejkholdera
+   - Ove veštine su jednako primenljive kada "prevazilazite otpor" unutar vašeg tima
+
+**Uloga mentorstva:**
+
+**Mentorstvo može ubrzati vaš rast u prodajnoj sposobnosti.** Razmislite o pronalaženju mentora koji je vrhunski prodajni performer ili prodajno orijentisani rukovodilac. Praćenjem njih ili tražeći njihov savet, možete naučiti suptilnosti kao što su:
+- Kako "čitati sobu"
+- Kako prilagoditi vaš pristup različitim stejkholderima
+- Kako ostati otporni pred odbijanjem
+
+Neke organizacije sparuju nastajuće lidere sa prodajnim mentorima posebno da usade način razmišljanja fokusiran na korisnika i ubeđivanje. Takođe, praktikovanje ovih veština u realnim scenarijima (npr., volontiranje da predstavite predlog višem menadžmentu ili vođenje sastanka sa klijentom) i zatim dobijanje povratnih informacija od vašeg mentora ili kouča će značajno poboljšati vašu samopouzdanost i sposobnost.
+
+**Zapamtite:** Cilj nije postati "prodajno orijentisan" u stereotipnom smislu, već da se **istinski povežete sa potrebama drugih i pokažete kako vaša ideja (ili proizvod/usluga) ispunjava te potrebe** – osnovna liderska veština.
 
 ## Digitalni marketing
 
