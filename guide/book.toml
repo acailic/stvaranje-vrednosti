@@ -41,3 +41,4 @@ command = "cargo run --quiet --manifest-path guide-helper/Cargo.toml"
 extra-watch-dirs = ["guide-helper/src"]
 
 # Rebuild trigger to ensure all chapters are properly rendered
+# Updated: Fix chapter 01 rendering issue
