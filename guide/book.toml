@@ -39,3 +39,5 @@ command = "cargo run --quiet --manifest-path guide-helper/Cargo.toml"
 
 [build]
 extra-watch-dirs = ["guide-helper/src"]
+
+# Rebuild trigger to ensure all chapters are properly rendered
