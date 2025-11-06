@@ -31,12 +31,6 @@
         // Remove code blocks and other elements that shouldn't be read
         clone.querySelectorAll('pre, code, .hljs, script, style, .menu-bar, .nav-chapters').forEach(el => el.remove());
 
-        // Get text content, clean it up
-        let text = clone.textContent || '';
-
-        // Clean up whitespace
-        text = text.replace(/\s+/g, ' ').trim();
-
         // Add pauses after headers and paragraphs for more natural reading
         const paragraphs = Array.from(contentElement.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li'));
         const segments = [];
@@ -56,7 +50,7 @@
         availableVoices = synth.getVoices();
 
         // Prefer high-quality, natural voices
-        // Priority: English voices, then Serbian/local language, then any
+        // Priority: English voices, then local/preferred language, then any
         const preferredVoices = availableVoices.filter(voice =>
             voice.lang.startsWith('en') ||
             voice.lang.startsWith('sr') ||
@@ -172,15 +166,6 @@
         };
 
         synth.speak(currentUtterance);
-    }
-
-    function pause() {
-        if (isPlaying && !isPaused) {
-            synth.pause();
-            isPaused = true;
-            isPlaying = true;
-            updateButton();
-        }
     }
 
     function stop() {
