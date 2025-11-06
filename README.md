@@ -1,20 +1,27 @@
-# mdBook
+# Stvaranje Vrednosti - Izazovi u Srpskoj IT Industriji
 
-[![CI Status](https://github.com/rust-lang/mdBook/actions/workflows/main.yml/badge.svg)](https://github.com/rust-lang/mdBook/actions/workflows/main.yml)
-[![crates.io](https://img.shields.io/crates/v/mdbook.svg)](https://crates.io/crates/mdbook)
-[![LICENSE](https://img.shields.io/github/license/rust-lang/mdBook.svg)](LICENSE)
+## O Projektu
 
-mdBook is a utility to create modern online books from Markdown files.
+Analiza ključnih izazova srpske IT industrije koji sprečavaju tranziciju od outsourcinga ka razvoju globalnih proizvoda.
 
-Check out the **[User Guide]** for a list of features and installation and usage information.
-The User Guide also serves as a demonstration to showcase what a book looks like.
+## Ključni Problemi
 
-If you are interested in contributing to the development of mdBook, check out the [Contribution Guide].
+**1. Nedostatak vizije** - Fokus na kratkoročne ciljeve i outsourcing umesto razvoja sopstvenih proizvoda
 
-## License
+**2. Slaba organizacija** - Manjak poslovnih veština u menadžmentu, prodaji i marketingu ograničava skaliranje i internacionalizaciju
 
-All the code in this repository is released under the ***Mozilla Public License v2.0***, for more information take a look at the [LICENSE] file.
+**3. Loša komunikacija** - Problemi u timskoj saradnji usporavaju razvoj i primenu novih ideja
 
-[User Guide]: https://rust-lang.github.io/mdBook/
-[contribution guide]: https://github.com/rust-lang/mdBook/blob/master/CONTRIBUTING.md
-[LICENSE]: https://github.com/rust-lang/mdBook/blob/master/LICENSE
+**4. Nedovoljna edukacija** - Slaba ulaganja u obuku za najnovije tehnologije (AI, cloud) smanjuju konkurentnost
+
+**5. Otpor promenama** - Interna kultura koči agilno prilagođavanje tržišnim i tehnološkim novitetima
+
+**6. Nedostatak mentorstva** - Slaba podrška za startape i talente gubi kreativnost i inovacije
+
+## Doprinos
+
+Doprinesi identifikacijom problema, predlaganjem rešenja ili deljenjem iskustava.
+
+---
+
+*Projekat koristi mdBook. Originalni kod pod Mozilla Public License v2.0*
