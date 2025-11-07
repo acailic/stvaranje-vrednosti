@@ -14,6 +14,42 @@ Ova knjiga prepoznaje da liderstvo nije jednodimenzionalno. Umesto toga, uspešn
 
 Ova knjiga je organizovana oko **šest fundamentalnih oblasti liderskih kompetencija**:
 
+```mermaid
+graph TB
+    Center[Efikasno<br/>Liderstvo]
+
+    V[1. Vizija i strategija<br/>🎯<br/>Strategijsko planiranje<br/>Upravljanje proizvodima<br/>Poslovni razvoj]
+    O[2. Organizacija i poslovanje<br/>⚙️<br/>Operativni menadžment<br/>Finansije<br/>Upravljanje projektima]
+    K[3. Komunikacija i saradnja<br/>💬<br/>Komunikacija<br/>Rešavanje konflikata<br/>Emocionalna inteligencija]
+    E[4. Edukacija i razvoj<br/>📚<br/>Upravljanje talentima<br/>Dizajn obuke<br/>Kontinuirano učenje]
+    P[5. Promene i inovacije<br/>🚀<br/>Upravljanje promenama<br/>Agile<br/>Kritičko razmišljanje]
+    M[6. Mentorstvo i podrška<br/>🤝<br/>Mentorstvo<br/>Izgradnja zajednice<br/>Upravljanje performansama]
+
+    V --> Center
+    O --> Center
+    K --> Center
+    E --> Center
+    P --> Center
+    M --> Center
+
+    V -.->|Potrebna je| K
+    O -.->|Pomaže| V
+    K -.->|Osnova za| M
+    E -.->|Podržava| M
+    P -.->|Zahteva| K
+    M -.->|Razvija| E
+
+    style Center fill:#ffd700,color:#000,stroke:#ff6f00,stroke-width:4px
+    style V fill:#e3f2fd
+    style O fill:#fff3e0
+    style K fill:#f3e5f5
+    style E fill:#e8f5e9
+    style P fill:#fce4ec
+    style M fill:#fff9c4
+```
+
+**Detaljno:**
+
 1. **Vizija i strategija** - Sposobnost da postavite pravac, formulišete strategije i inspirišete druge da slede vašu viziju
 
 2. **Organizacija i poslovanje** - Operativne veštine potrebne za efikasno vođenje organizacije i održavanje poslovne izvrsnosti

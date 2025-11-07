@@ -6,6 +6,47 @@ Nijedan lider ne uspeva sam; sposobnost da radite sa i kroz druge je od najveće
 
 **Jasna i efektivna komunikacija** je lepak koji drži timove na okupu. Lideri moraju prenositi ideje, očekivanja i povratne informacije na načine koje ljudi razumeju i pamte. Snažne komunikacijske veštine uključuju ne samo jasno govorenje i pisanje, već i prilagođavanje poruke publici i korišćenje pravog tona. Istraživanja konzistentno pokazuju da dobra komunikacija korelira sa boljom timskom performansom – na primer, Harvard studija je otkrila da jasna, dobro struktuirana komunikacija može poboljšati efikasnost međufunkcionalnog tima za 40%.
 
+### 📊 Vizualizacija: Model efektivne komunikacije
+
+```mermaid
+graph LR
+    A[Pošiljalac<br/>Lider] --> B[Enkodiranje<br/>Formulisanje poruke]
+    B --> C[Kanal<br/>Email/Govor/Sastanak]
+    C --> D[Dekodiranje<br/>Razumevanje]
+    D --> E[Primalac<br/>Tim/Stejkholderi]
+    E --> F[Povratna informacija]
+    F --> A
+
+    N1[Šum/Prepreke] -.->|Ometaju| C
+    N2[Jezičke barijere<br/>Kulturne razlike<br/>Distrakcije] -.->|Smanjuju jasnoću| D
+
+    style A fill:#e3f2fd
+    style E fill:#e8f5e9
+    style F fill:#fff3e0
+    style N1 fill:#ffcdd2
+    style N2 fill:#ffcdd2
+```
+
+**Piramidalni princip strukture komunikacije:**
+
+```mermaid
+graph TB
+    A[Glavna poruka/Zaključak<br/>Najvažnija ideja PRVO] --> B[Ključni argument 1]
+    A --> C[Ključni argument 2]
+    A --> D[Ključni argument 3]
+    B --> E[Dokaz 1.1]
+    B --> F[Dokaz 1.2]
+    C --> G[Dokaz 2.1]
+    C --> H[Dokaz 2.2]
+    D --> I[Dokaz 3.1]
+    D --> J[Dokaz 3.2]
+
+    style A fill:#4caf50,color:#fff
+    style B fill:#66bb6a
+    style C fill:#66bb6a
+    style D fill:#66bb6a
+```
+
 Da poboljšate svoju komunikaciju, vežbajte organizovanje vaših misli (razmislite o korišćenju okvira kao što je Piramidalni Princip za prezentacije ili SCR (Situacija-Komplikacija-Rezolucija) metoda za emailove). Uvek ciljajte na jasnoću i sažetost; zaposleni kolege će ceniti koncizne poruke. Neverbalna komunikacija je takođe ključna: budite svesni vašeg jezika tela i izraza lica, jer oni mogu ili pojačati ili potkopati vaše reči.
 
 Jedna strategija je traženje povratne informacije o vašem stilu komunikacije – pitajte kolege da li vaše instrukcije ili vizija jasno dolaze. Oni mogu istaći žargon koji preterano koristite ili vam reći da li izgledate nepristupačno. U liderskim ulogama, pripovedanje je moćna veština – ono transformiše dosadne podatke u ubedljiv narativ. Radite na ubacivanju priča ili stvarnih primera kada komunicirate promene ili ciljeve; to čini vašu poruku lepljivom.
@@ -30,6 +71,48 @@ Razmislite o učenju od mentora ili kouča koji primjenjuje sjajno slušanje. Mo
 
 **Konflikt na radnom mestu je neizbežan** – različite perspektive, ciljevi ili stilovi mogu se sukobiti. Ono što izdvaja efikasne lidere je kako oni rukuju tim konfliktima. Dobro rešavanje konflikta ne znači izbegavanje konflikta u potpunosti (što može dovesti do potisnutih problema i negodovanja); to znači suočavanje sa neslaganjima konstruktivno i brzo tako da odnosi i saradnja zapravo izlaze jači.
 
+### 📊 Vizualizacija: Proces rešavanja konflikta
+
+```mermaid
+graph TD
+    A[Prepoznavanje konflikta<br/>Rani znaci napetosti] --> B[Pauza i smirivanje<br/>Emocionalna regulacija]
+    B --> C[Aktivno slušanje<br/>Razumevanje obe strane]
+    C --> D[Identifikacija korena problema<br/>Šta je zapravo u pitanju?]
+    D --> E[Generisanje opcija<br/>Brainstorming rešenja]
+    E --> F[Evaluacija alternativa<br/>Pro i kontra]
+    F --> G[Dogovor o rešenju<br/>Win-Win pristup]
+    G --> H[Implementacija<br/>Akcioni plan]
+    H --> I[Praćenje<br/>Da li rešenje funkcioniše?]
+    I --> J{Rešeno?}
+    J -->|Da| K[Jačanje odnosa]
+    J -->|Ne| D
+
+    style A fill:#ffcdd2
+    style B fill:#fff9c4
+    style C fill:#e3f2fd
+    style G fill:#c8e6c9
+    style K fill:#a5d6a7
+
+```
+
+**Pet stilova rešavanja konflikata:**
+
+```mermaid
+quadrantChart
+    title Stilovi rešavanja konflikta
+    x-axis Niska asertivnost → Visoka asertivnost
+    y-axis Niska kooperativnost → Visoka kooperativnost
+    quadrant-1 Kolaboracija: Win-Win
+    quadrant-2 Akomodacija: Ustupanje
+    quadrant-3 Izbegavanje: Odlaganje
+    quadrant-4 Kompromis: Srednji put
+    Kolaboracija: [0.9, 0.9]
+    Kompeticija: [0.9, 0.1]
+    Akomodacija: [0.1, 0.9]
+    Izbegavanje: [0.1, 0.1]
+    Kompromis: [0.5, 0.5]
+```
+
 Loše upravljan konflikt ima ozbiljne negativne strane: ankete ukazuju da je 88% zaposlenih videlo konflikte koji ugrožavaju moral, a 18% je čak videlo projekte koji direktno propadaju zbog nerešenog konflikta. Sa druge strane, kada se dobro upravlja, konflikt može dovesti do "poboljšanih radnih odnosa, boljeg razumevanja drugih, pa čak i kreativnih rešenja", sa preko 50% ljudi koji priznaju ove pozitivne ishode dobro upravljanog konflikta.
 
 Da poboljšate svoje veštine rešavanja konflikata, počnite učenjem da prepoznate rane znake konflikta (npr. napetost u sastancima, pasivno-agresivni komentari, formiranje klika) i intervenišite rano pre nego što se stvari ugnezde. Obuka u osnovnoj medijaciji ili ključnim razgovorima može vas opremiti tehnikama – kao što je fokusiranje na problem a ne na osobu, traženje zajedničke osnove i generisanje win-win opcija.
@@ -47,6 +130,67 @@ Takođe je važno kreirati sigurno okruženje gde se ljudi osećaju ugodno da de
 ## Emocionalna inteligencija
 
 **Emocionalna inteligencija**, često skraćeno kao EQ, je sposobnost da prepoznate i upravljate svojim sopstvenim emocijama, kao i da razumete i utičete na emocije drugih. Široko se smatra kritičnom liderskom veštinom – neki kažu da IQ možda može da vas zaposli, ali EQ vas promovise. Visoka emocionalna inteligencija pomaže liderima da ostanu smireni pod pritiskom, saosećaju sa članovima tima i navigiraju društvenom kompleksnošću na radnom mestu.
+
+### 📊 Vizualizacija: Pet stubova emocionalne inteligencije
+
+```mermaid
+graph TD
+    EQ[Emocionalna Inteligencija]
+
+    EQ --> SA[Samosvesnost<br/>Self-Awareness]
+    EQ --> SR[Samoregulacija<br/>Self-Regulation]
+    EQ --> M[Motivacija<br/>Motivation]
+    EQ --> E[Empatija<br/>Empathy]
+    EQ --> SS[Društvene veštine<br/>Social Skills]
+
+    SA --> SA1[Prepoznavanje emocija]
+    SA --> SA2[Razumevanje uticaja]
+    SA --> SA3[Samoprocena]
+
+    SR --> SR1[Kontrola impulsa]
+    SR --> SR2[Adaptabilnost]
+    SR --> SR3[Upravljanje stresom]
+
+    M --> M1[Postignuće]
+    M --> M2[Inicijativa]
+    M --> M3[Optimizam]
+
+    E --> E1[Razumevanje drugih]
+    E --> E2[Razvoj drugih]
+    E --> E3[Orijentacija ka služenju]
+
+    SS --> SS1[Uticaj i inspiracija]
+    SS --> SS2[Komunikacija]
+    SS --> SS3[Upravljanje konfliktima]
+    SS --> SS4[Izgradnja timova]
+
+    style EQ fill:#9c27b0,color:#fff
+    style SA fill:#e1bee7
+    style SR fill:#ce93d8
+    style M fill:#ba68c8
+    style E fill:#ab47bc
+    style SS fill:#8e24aa,color:#fff
+```
+
+**EQ u akciji - Scenario rešavanja problema:**
+
+```mermaid
+sequenceDiagram
+    participant L as Lider (Visok EQ)
+    participant TM as Član tima (Frustriran)
+
+    TM->>L: Iskazuje frustraciju projektom
+    Note over L: Samosvesnost:<br/>Primećuje sopstvenu odbrambenu reakciju
+    Note over L: Samoregulacija:<br/>Pauzira, ne reaguje impulsivno
+    L->>TM: Aktivno sluša i pokazuje empatiju
+    Note over L: Empatija:<br/>Razume perspektivu člana tima
+    L->>TM: Postavlja otvorena pitanja
+    TM->>L: Objašnjava dublji problem
+    Note over L: Društvene veštine:<br/>Sarađuje na rešenju
+    L->>TM: Zajedno razvijaju akcioni plan
+    Note over TM: Oseća se saslušan i podržan
+    Note over L,TM: Jači odnos i poverenje
+```
 
 Ona obuhvata kompetencije kao što su samosvesnost, samoregulacija, motivacija (biti vođen da postignete izvan novca/statusa), empatija i društvene veštine (izgradnja rapporta, uticaj, upravljanje konfliktima). Postoje jake dokaze koji povezuju emocionalnu inteligenciju sa poslovnim ishodima: lideri sa visokim EQ-om imaju tendenciju da imaju angažovanije timove i bolje poslovne rezultate.
 

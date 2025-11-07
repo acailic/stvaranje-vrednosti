@@ -8,6 +8,63 @@ Ova oblast kompetencija obuhvata sposobnost lidera da postavi pravac za organiza
 
 Strategijsko planiranje oštrije fokusira organizaciju kanališući energiju ka "šaci ciljeva koji su presudni" koji zaista imaju značaj. Bez jasne strategije, organizacije mogu lutati ili gubljati resurse na inicijative koje nisu usklađene sa njihovom osnovnom misijom.
 
+### 📊 Vizualizacija: Proces strategijskog planiranja
+
+```mermaid
+graph TD
+    A[Definisanje vizije i misije] --> B[Analiza okruženja]
+    B --> C[SWOT Analiza]
+    C --> D[Postavljanje strateških ciljeva]
+    D --> E[Razvoj akcionog plana]
+    E --> F[Alokacija resursa]
+    F --> G[Implementacija]
+    G --> H[Praćenje i merenje]
+    H --> I{Ciljevi postignuti?}
+    I -->|Da| J[Postavljanje novih ciljeva]
+    I -->|Ne| K[Prilagođavanje strategije]
+    K --> E
+    J --> B
+
+    style A fill:#e1f5ff
+    style D fill:#fff4e6
+    style G fill:#e8f5e9
+    style H fill:#f3e5f5
+```
+
+**Ključni alati za strategijsko planiranje:**
+
+```mermaid
+mindmap
+  root((Strategijsko<br/>Planiranje))
+    SWOT
+      Snage
+      Slabosti
+      Prilike
+      Pretnje
+    Porter 5 Sila
+      Konkurencija
+      Novi ulaznici
+      Supstituti
+      Kupci
+      Dobavljači
+    Balanced Scorecard
+      Finansije
+      Korisnici
+      Procesi
+      Učenje i razvoj
+    OKR Framework
+      Objectives ciljevi
+      Key Results rezultati
+      Kvartalna evaluacija
+    PESTEL
+      Political
+      Economic
+      Social
+      Technological
+      Environmental
+      Legal
+```
+
 **Kako razviti veštine strategijskog planiranja:**
 
 Da biste razvili veštine strategijskog planiranja, počnite razumevanjem osnovnih okvira:
@@ -33,6 +90,54 @@ Efikasno strategijsko planiranje takođe uključuje skaniranje okruženja da se 
 
 **Upravljanje proizvodima (Product Management)** je veština definisanja i razvoja proizvoda koji ispunjavaju potrebe korisnika dok postižu poslovne ciljeve. Lider sa ovom kompetencijom može prioritizovati karakteristike proizvoda, uskladiti različite stejkholdere (inženjering, dizajn, marketing, prodaju) i iterativno ga unapređivati zasnovano na povratnim informacijama. Ključne veštine uključuju jasnu viziju proizvoda, empatiju prema korisnicima i snažnu komunikaciju kako bi se inspirisala unakrsna funkcijska timska saradnja oko proizvoda.
 
+### 📊 Vizualizacija: Životni ciklus upravljanja proizvodom
+
+```mermaid
+graph LR
+    A[Istraživanje korisnika] --> B[Definisanje vizije]
+    B --> C[Prioritizacija features]
+    C --> D[Razvoj i dizajn]
+    D --> E[Testiranje]
+    E --> F[Lansiranje]
+    F --> G[Prikupljanje feedbacka]
+    G --> H[Analiza metrika]
+    H --> A
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style D fill:#f3e5f5
+    style F fill:#e8f5e9
+    style H fill:#fce4ec
+
+    classDef stakeholder fill:#ffe0b2,stroke:#f57c00
+    class C,D stakeholder
+```
+
+**RICE Framework za prioritizaciju:**
+
+```mermaid
+graph TB
+    subgraph RICE Skorovanje
+        R[Reach<br/>Domet<br/>Broj korisnika]
+        I[Impact<br/>Uticaj<br/>Vrednost za korisnika]
+        C[Confidence<br/>Pouzdanost<br/>Sigurnost u procenu]
+        E[Effort<br/>Napor<br/>Vreme razvoja]
+    end
+
+    R --> S[RICE Score]
+    I --> S
+    C --> S
+    E --> S
+
+    S --> P{Prioritet}
+    P -->|Visok skor| H[Implementiraj prvo]
+    P -->|Nizak skor| L[Odloži ili odbaci]
+
+    style S fill:#4caf50,color:#fff
+    style H fill:#66bb6a,color:#fff
+    style L fill:#ef5350,color:#fff
+```
+
 **Kako poboljšati upravljanje proizvodima:**
 
 Razvijanje veština u upravljanju proizvodima znači učenje razumevanja potreba korisnika, tržišnih trendova i kako prevesti visokonu viziju u karakteristike proizvoda. Jedan ključni aspekt je **vizionarsko liderstvo u upravljanju proizvodima**, koje uključuje predviđanje budućih potreba korisnika i kreiranje proizvoda koji ne samo da odgovaraju na potražnju već je oblikuju.
@@ -57,6 +162,26 @@ Mentorstvo je izuzetno vredno ovde. Na primer, praćenje iskusnog menadžera pro
 ## Poslovni razvoj
 
 **Poslovni razvoj (Business Development)** se fokusira na pronalaženje novih prilika za rast – kroz partnerstva, nova tržišta ili nove kanale. Zahteva strateško i kritičko razmišljanje, umrežavanje i veštine pregovaranja. Najbolji poslovni razvojni stručnjaci su proaktivni i pokazuju snažan "duh inicijative", kako primećuju industrijski lideri. Oni su takođe odlučni: "donošenje strateških odluka je obavezno" u poslovnom razvoju.
+
+### 📊 Vizualizacija: Levak poslovnog razvoja
+
+```mermaid
+graph TB
+    A[Identifikacija prilika<br/>200 potencijalnih partnera] --> B[Kvalifikacija<br/>50 odgovarajućih]
+    B --> C[Početni kontakt<br/>25 zainteresovanih]
+    C --> D[Prezentacija vrednosti<br/>15 sastanaka]
+    D --> E[Pregovaranje<br/>8 u procesu]
+    E --> F[Zatvaranje<br/>3 sporazuma]
+    F --> G[Održavanje odnosa<br/>Dugoročna saradnja]
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style B fill:#e8eaf6,stroke:#3f51b5
+    style C fill:#f3e5f5,stroke:#7b1fa2
+    style D fill:#fce4ec,stroke:#c2185b
+    style E fill:#fff3e0,stroke:#f57c00
+    style F fill:#e8f5e9,stroke:#388e3c
+    style G fill:#c8e6c9,stroke:#2e7d32
+```
 
 **Kako poboljšati veštine poslovnog razvoja:**
 

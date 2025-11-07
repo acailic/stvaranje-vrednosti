@@ -6,6 +6,55 @@ Ova oblast kompetencija pokriva veštine potrebne za efikasno vođenje organizac
 
 **Snažno operativno upravljanje** je kičma svakog uspešnog biznisa. Ono uključuje dizajniranje efikasnih procesa, mudro upravljanje resursima i kontinuirano unapređivanje radnog toka. Lideri vešti u operacijama često primenjuju metodologije kao što su Lean ili Six Sigma da eliminišu rasipanje i optimizuju produktivnost.
 
+### 📊 Vizualizacija: Value Stream Mapping (Mapiranje toka vrednosti)
+
+```mermaid
+graph LR
+    A[Zahtev korisnika] --> B[Prijem narudžbine<br/>⏱️ 15 min]
+    B --> C[Čekanje odobrenja<br/>⏱️ 2 dana<br/>⚠️ RASIPANJE]
+    C --> D[Proizvodnja<br/>⏱️ 4 sata]
+    D --> E[Kontrola kvaliteta<br/>⏱️ 30 min]
+    E --> F[Pakovanje<br/>⏱️ 20 min]
+    F --> G[Dostava<br/>⏱️ 1 dan]
+    G --> H[Zadovoljan korisnik]
+
+    style C fill:#ffcdd2,stroke:#c62828
+    style D fill:#c8e6c9,stroke:#2e7d32
+    style E fill:#fff9c4,stroke:#f57f17
+
+    subgraph Lean principi
+        I[Eliminiši rasipanje]
+        J[Poboljšaj protok]
+        K[Smanjenje vremena ciklusa]
+    end
+```
+
+**Metode unapređenja procesa:**
+
+```mermaid
+mindmap
+  root((Unapređenje<br/>Operacija))
+    Lean Manufacturing
+      5S sistem
+      Kaizen
+      Just-in-Time
+      Value Stream
+    Six Sigma
+      DMAIC
+      Redukcija varijacija
+      Statistička kontrola
+      Greška prema nuli
+    Agile Operations
+      Sprintovi
+      Kontinuirano poboljšanje
+      Fleksibilnost
+      Brza iteracija
+    TOC Theory of Constraints
+      Identifikacija uskog grla
+      Optimizacija
+      Subordinacija
+```
+
 **Uticaj dobrog upravljanja operacijama:**
 
 Organizacije koje naglašavaju operativnu izvrsnost (process excellence) rasipaju daleko manje resursa. **Studije pokazuju da loše upravljanje projektima i procesima može uzrokovati da kompanije izgube do 12% svojih resursa** – trošak koji većina biznisa ne može da priušti. Sa druge strane, efikasno upravljanje operacijama povećava profitabilnost i zadovoljstvo korisnika, i kreira stabilnu osnovu za rast.
@@ -99,6 +148,52 @@ Da se poboljšate u ovoj oblasti, možete pohađati onlajn kurseve ili sertifika
 ## Finansijsko upravljanje
 
 **Finansijsko upravljanje** je ključna liderska veština koja uključuje planiranje, organizovanje i kontrolu finansijskih resursa. Kao što jedna poslovna maksima kaže: "Biznis ne može da raste i napreduje kada je njegov finansijski kućni poredak u neredu." Snažno finansijsko upravljanje vam daje kontrolu nad zdravljem kompanije – osiguravajući da imate novčani tok da poslujete i profitabilnost da održite rast. Ono obuhvata sve od budžetiranja i prognoziranja, do analize finansijskih izveštaja, do donošenja investicionih odluka, do upravljanja rizicima.
+
+### 📊 Vizualizacija: Ciklus finansijskog upravljanja
+
+```mermaid
+graph TB
+    A[Planiranje i budžetiranje] --> B[Alokacija resursa]
+    B --> C[Praćenje troškova]
+    C --> D[Finansijsko izveštavanje]
+    D --> E[Analiza performansi]
+    E --> F{Ciljevi postignuti?}
+    F -->|Da| G[Optimizacija i rast]
+    F -->|Ne| H[Korektivne akcije]
+    H --> A
+    G --> A
+
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style E fill:#f3e5f5
+    style F fill:#fff9c4
+
+    subgraph Ključne metrike
+        I[ROI - Povrat investicije]
+        J[Profitna marža]
+        K[Novčani tok]
+        L[Burn rate]
+    end
+```
+
+**Četiri stuba finansijskog upravljanja:**
+
+```mermaid
+quadrantChart
+    title Fokus finansijskog liderstva
+    x-axis Operativno → Strateško
+    y-axis Kratkoročno → Dugoročno
+    quadrant-1 Strateško planiranje
+    quadrant-2 Investicije u rast
+    quadrant-3 Dnevno upravljanje
+    quadrant-4 Budžetiranje i kontrola
+    Novčani tok: [0.2, 0.3]
+    ROI analiza: [0.7, 0.7]
+    Mesečni izveštaji: [0.3, 0.2]
+    Prognoziranje: [0.8, 0.5]
+    Kontrola troškova: [0.2, 0.4]
+    Akvizicije: [0.9, 0.8]
+```
 
 Lideri ne moraju svi biti računovođe, ali im je potrebna finansijska pismenost. Zapravo, kompanije koje konzistentno prate i upravljaju svojim finansijama "nalaze glatkiji put ka rastu i profitabilnosti" jer mogu brzo korigovati kurs i alocirati resurse tamo gde su najpotrebniji.
 

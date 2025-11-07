@@ -4,7 +4,51 @@ Promena je jedina konstanta u modernom bizn isu, a inovacija je motor dugoročno
 
 ## Upravljanje promenama
 
-**Upravljanje promenama** je disciplina vođenja pojedinaca, timova i organizacija kroz tranzicije – bilo da se radi o implementaciji nove strategije, usvajanju nove tehnologije ili reorganizaciji kompanije. Sumornja činjenica je da mnoge inicijative za promene ne uspevaju da ispune svoje ciljeve. Zapravo, oko 70% inicijativa za promene propada, prema dugoročnom istraživanju.
+**Upravljanje promenama** je disciplina vođenja pojedinaca, timova i organizacija kroz tranzicije – bilo da se radi o implementaciji nove strategije, usvajanju nove tehnologije ili reorganizaciji kompanije. Sumorjna činjenica je da mnoge inicijative za promene ne uspevaju da ispune svoje ciljeve. Zapravo, oko 70% inicijativa za promene propada, prema dugoročnom istraživanju.
+
+### 📊 Vizualizacija: Kotter-ovih 8 koraka za upravljanje promenama
+
+```mermaid
+graph TB
+    Step1[1. Kreiranje osećaja hitnosti<br/>⚡ Zašto sada?] --> Step2[2. Formiranje moćne koalicije<br/>👥 Okupite šampione promene]
+    Step2 --> Step3[3. Kreiranje vizije za promenu<br/>🎯 Jasna budućnost]
+    Step3 --> Step4[4. Komunikacija vizije<br/>📢 Često i jasno]
+    Step4 --> Step5[5. Uklanjanje prepreka<br/>🚧 Otklonite barijere]
+    Step5 --> Step6[6. Kreiranje brzih pobeda<br/>🏆 Rani uspesi]
+    Step6 --> Step7[7. Održavanje momentuma<br/>🔄 Ne usporavaj]
+    Step7 --> Step8[8. Učvršćivanje promene u kulturi<br/>💪 Nova normala]
+
+    style Step1 fill:#ffebee
+    style Step2 fill:#fce4ec
+    style Step3 fill:#f3e5f5
+    style Step4 fill:#ede7f6
+    style Step5 fill:#e8eaf6
+    style Step6 fill:#e3f2fd
+    style Step7 fill:#e1f5fe
+    style Step8 fill:#e0f7fa
+```
+
+**ADKAR Model - Individualna perspektiva promene:**
+
+```mermaid
+graph LR
+    A[Awareness<br/>Svesnost<br/>Razumevanje potrebe] --> D[Desire<br/>Želja<br/>Podrška za promenu]
+    D --> K[Knowledge<br/>Znanje<br/>Kako da se promeni]
+    K --> AB[Ability<br/>Sposobnost<br/>Implementacija promene]
+    AB --> R[Reinforcement<br/>Pojačanje<br/>Održavanje promene]
+
+    style A fill:#fff3e0
+    style D fill:#ffe0b2
+    style K fill:#ffccbc
+    style AB fill:#ffab91
+    style R fill:#ff8a65,color:#fff
+
+    subgraph Faze_uspeha[Faze uspeha]
+        R --> Success[Trajna promena]
+    end
+
+    style Success fill:#4caf50,color:#fff
+```
 
 One propadaju iz različitih razloga: nedostatak jasne vizije, loša komunikacija, neadresiranje "ljudske strane" promene, zamor od promena, itd. Kao lider, biti veš u upravljanju promenama znači da možete povećati šanse da vaše inicijative za promene uspeju umesto da se posrnu.
 
@@ -19,6 +63,64 @@ Tražite mentore koji su vodili velike promene – možda lidera koji je nadgled
 ## Agilne metodologije
 
 **Agilne metodologije** se odnose na skup principa i praksi izvorno rođenih u razvoju softvera (kroz Agile Manifesto) koje naglašavaju adaptabilnost, saradnju sa klijentima i iterativni napredak. Međutim, agilno razmišljanje sada je proželo mnoge oblasti biznisa zbog svoje efikasnosti u suočavanju sa neizvesnošću i brzim promenama.
+
+### 📊 Vizualizacija: Agile Scrum Sprint ciklus
+
+```mermaid
+graph TB
+    PB[Product Backlog<br/>Lista prioriteta] --> SP[Sprint Planning<br/>Planiranje 2-4 nedelje]
+    SP --> SB[Sprint Backlog<br/>Zadaci za sprint]
+    SB --> DS[Daily Standup<br/>15 min dnevno<br/>Šta? Prepreke?]
+    DS --> DEV[Development Work<br/>Iterativni razvoj]
+    DEV --> DS
+    DEV --> SR[Sprint Review<br/>Demo stejkholderima]
+    SR --> RETRO[Sprint Retrospective<br/>Šta poboljšati?]
+    RETRO --> INC[Increment<br/>Potencijalno isporučivo]
+    INC --> PB
+    RETRO --> SP
+
+    style SP fill:#e3f2fd
+    style DS fill:#fff3e0
+    style SR fill:#e8f5e9
+    style RETRO fill:#f3e5f5
+    style INC fill:#c8e6c9
+
+    subgraph Sprint_2_4_nedelje[Sprint 2-4 nedelje]
+        DS
+        DEV
+    end
+```
+
+**Agile vs Waterfall - Poređenje:**
+
+```mermaid
+graph LR
+    subgraph Waterfall["⬇️ Waterfall (Kaskadni)"]
+        W1[Zahtevi] --> W2[Dizajn]
+        W2 --> W3[Implementacija]
+        W3 --> W4[Testiranje]
+        W4 --> W5[Deployment]
+        W5 --> W6[Održavanje]
+    end
+
+    subgraph Agile["🔄 Agile (Iterativni)"]
+        A1[Planiraj] --> A2[Dizajniraj]
+        A2 --> A3[Razvijaj]
+        A3 --> A4[Testiraj]
+        A4 --> A5[Review]
+        A5 --> A6[Deploy]
+        A6 --> A1
+    end
+
+    style W1 fill:#ffcdd2
+    style W6 fill:#ffcdd2
+    style A1 fill:#c8e6c9
+    style A6 fill:#c8e6c9
+```
+
+**Statistika uspešnosti:**
+- Agile uspeh: 42% | Waterfall uspeh: 13%
+- Agile neuspeh: 11% | Waterfall neuspeh: 59%
 
 U suštini, biti agilan znači raditi u kratkim ciklusima, često preispitivati i prilagođavati planove, i uključivati stejkholdere tokom procesa. Kontrast je sa tradicionalnim "waterfall" pristupima koji planiraju velike projekte detaljno od početka i često se bore da se prilagode.
 

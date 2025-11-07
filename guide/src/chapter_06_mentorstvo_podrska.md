@@ -6,6 +6,73 @@ Poslednja oblast kompetencija centrira se oko toga kako lideri razvijaju druge i
 
 **Mentorstvo i koučing** se odnose na to da jedna osoba (obično iskusnija) vodi drugu da raste i uspe. Kao lider, možete igrati ulogu mentora/kouča za članove vašeg tima ili druge u organizaciji. Takođe, traženje mentora za sebe je ključno za vaš kontinuirani rast (bez obzira koliko ste viši, uvek postoji nešto da naučite iz iskustava drugih).
 
+### 📊 Vizualizacija: Odnos mentorstva
+
+```mermaid
+graph TB
+    subgraph Mentor_daje[Mentor daje]
+        M1[Znanje i iskustvo]
+        M2[Vođenje i savet]
+        M3[Umrežavanje]
+        M4[Povratne informacije]
+    end
+
+    subgraph Zajednički_prostor[Zajednički prostor rasta]
+        C1[Aktivno slušanje]
+        C2[Poverenje]
+        C3[Otvorenost]
+        C4[Redovni kontakt]
+        C5[Postavljanje ciljeva]
+    end
+
+    subgraph Mentee_daje[Mentee daje]
+        E1[Entuzijazam]
+        E2[Inicijativa]
+        E3[Svežu perspektivu]
+        E4[Spremnost za učenje]
+    end
+
+    M1 --> C1
+    M2 --> C2
+    M3 --> C3
+    M4 --> C4
+
+    E1 --> C5
+    E2 --> C1
+    E3 --> C2
+    E4 --> C3
+
+    C1 --> R[Rast obe strane]
+    C2 --> R
+    C3 --> R
+    C4 --> R
+    C5 --> R
+
+    style R fill:#4caf50,color:#fff
+    style C1 fill:#e8f5e9
+    style C2 fill:#e8f5e9
+    style C3 fill:#e8f5e9
+    style C4 fill:#e8f5e9
+    style C5 fill:#e8f5e9
+```
+
+**GROW Model za koučing razgovore:**
+
+```mermaid
+graph LR
+    G[Goal<br/>Cilj<br/>Šta želite da postignete?] --> R[Reality<br/>Realnost<br/>Gde ste sada?]
+    R --> O[Options<br/>Opcije<br/>Šta možete učiniti?]
+    O --> W[Will/Way Forward<br/>Akcija<br/>Šta ćete uraditi?]
+
+    style G fill:#e3f2fd
+    style R fill:#fff3e0
+    style O fill:#f3e5f5
+    style W fill:#e8f5e9
+
+    W --> Action[Konkretan akcioni plan<br/>sa vremenskim rokovima]
+    style Action fill:#4caf50,color:#fff
+```
+
 Hajde da razbijemo ovo na dve perspektive: biti mentor i biti mentorisan. Kada delujete kao mentor ili kouč, vaš posao je da slušate, postavljate produbljena pitanja, delite znanje i pružate podsticaj i povratne informacije. Dobri mentori ne samo da daju odgovore – često vode mentee da sami pronađu odgovore, što je osnažujuće.
 
 Uticaj mentorstva je dobro dokumentovan: Programi mentorstva daju liderima u nastajanju personalizovano vođenje, prenos znanja i prilike za umrežavanje, značajno povećavajući njihov razvoj veština. Mentori takođe često služe kao uzori za liderske vrednosti i ponašanja. Da postanete bolji mentor, praktikujte aktivno slušanje (kao što je diskutovano u odeljku 3) i naučite neke koučing tehnike (na primer, GROW model – Goal, Reality, Options, Will – za strukturisanje razvojnih razgovora).
@@ -47,6 +114,56 @@ Na primer, grupa Women in Tech ili Young Professionals može pružiti dodatnu ka
 ## Upravljanje učinkom
 
 **Upravljanje učinkom** je proces postavljanja ciljeva, praćenja napretka, pružanja povratnih informacija i evaluiranja ishoda za zaposlene (i timove). Dobro urađeno, usklađuje sve sa organizacionim ciljevima, motiviše ljude kroz jasna očekivanja i prilike za rast, i rešava probleme pre nego što se ugnezde.
+
+### 📊 Vizualizacija: Kontinuirani ciklus upravljanja performansama
+
+```mermaid
+graph TB
+    A[Postavljanje ciljeva<br/>SMART/OKR] --> B[Redovni check-in sastanci<br/>Nedeljno/mesečno]
+    B --> C[Kontinuirana povratna informacija<br/>U realnom vremenu]
+    C --> D[Coaching i razvoj<br/>Podrška i resursi]
+    D --> E[Mid-year pregled<br/>Prilagođavanje kursa]
+    E --> F[Godišnja evaluacija<br/>Holistička procena]
+    F --> G[Razvojni plan<br/>Ciljevi za sledeću godinu]
+    G --> A
+
+    style A fill:#e3f2fd
+    style C fill:#fff3e0
+    style D fill:#e8f5e9
+    style F fill:#f3e5f5
+
+    subgraph Ključni_principi[Ključni principi]
+        P1[Jasna očekivanja]
+        P2[Dokumentovana komunikacija]
+        P3[Pravičnost i konzistentnost]
+        P4[Fokus na rast]
+    end
+```
+
+**360-Stepena povratna informacija:**
+
+```mermaid
+graph TB
+    Center[Zaposleni<br/>koji se ocenjuje]
+
+    Manager[Menadžer<br/>Nadređeni] --> Center
+    Peers[Kolege<br/>Vršnjaci] --> Center
+    Direct[Direktni izveštaji<br/>Podređeni] --> Center
+    Self[Samoprocena<br/>Vlastite misli] --> Center
+    External[Eksterni<br/>Klijenti/Partneri] --> Center
+
+    Center --> Insights[Sveobuhvatan uvid<br/>u performanse]
+    Insights --> Development[Razvojni plan<br/>Akcione tačke]
+
+    style Center fill:#9c27b0,color:#fff
+    style Manager fill:#e1bee7
+    style Peers fill:#ce93d8
+    style Direct fill:#ba68c8
+    style Self fill:#ab47bc
+    style External fill:#9575cd
+    style Insights fill:#4caf50,color:#fff
+    style Development fill:#66bb6a,color:#fff
+```
 
 Loše urađeno, može demoralizovati ili kreirati konfuziju. Moderno upravljanje učinkom se pomera od teških godišnjih pregleda ka kontinuiranijoj povratnoj informaciji i koučingu, što se lepo vezuje sa mentorstvom i podrškom.
 

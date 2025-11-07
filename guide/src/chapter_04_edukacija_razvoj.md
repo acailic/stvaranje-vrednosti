@@ -6,6 +6,60 @@ Ova oblast kompetencija se bavi razvijanjem ljudi – upravljanjem talentima, di
 
 **Upravljanje talentima** uključuje strateško privlačenje, razvijanje i zadržavanje zaposlenih sa pravim veštinama i potencijalom da ispune organizacione ciljeve. Ono uključuje planiranje sukcesije, razvoj performansi, mapiranje karijere i ponekad čak upravljanje znanjem (osiguravanje da se kritičan know-how hvata i prenosi). U periodima promena ili rasta, upravljanje talentima je posebno vitalno – zanemarite ga, i možete videti egzodus ključnih ljudi.
 
+### 📊 Vizualizacija: Ciklus upravljanja talentima
+
+```mermaid
+graph TB
+    A[Planiranje radne snage<br/>Identifikacija potreba] --> B[Privlačenje talenta<br/>Zapošljavanje]
+    B --> C[Onboarding<br/>Integracija]
+    C --> D[Razvoj i obuka<br/>Kontinuirano učenje]
+    D --> E[Upravljanje performansama<br/>Evaluacija i feedback]
+    E --> F[Zadržavanje<br/>Angažovanje zaposlenih]
+    F --> G[Planiranje sukcesije<br/>Razvoj budućih lidera]
+    G --> A
+
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style D fill:#fff3e0
+    style F fill:#e8f5e9
+    style G fill:#fce4ec
+
+    H[Kontinuirano praćenje i<br/>prilagođavanje strategije]
+    H -.->|Informiše| A
+    H -.->|Informiše| D
+    H -.->|Informiše| F
+```
+
+**9-Box Grid za procenu talenta:**
+
+```mermaid
+graph TD
+    subgraph " "
+        direction LR
+        subgraph Visok_Potencijal[" "]
+            HP1[Nesigurna zvezda<br/>Niske performanse<br/>Visok potencijal<br/>🟡 Razvijaj intenzivno]
+            HP2[Budući lider<br/>Srednje performanse<br/>Visok potencijal<br/>🟢 Mentoriši za unapređenje]
+            HP3[Top talenat<br/>Visoke performanse<br/>Visok potencijal<br/>⭐ Zadrži po svaku cenu]
+        end
+        subgraph Srednji_Potencijal[" "]
+            MP1[Dilema<br/>Niske performanse<br/>Srednji potencijal<br/>🟠 Razmotriti PIP ili prelazak]
+            MP2[Čvrsti igrač<br/>Srednje performanse<br/>Srednji potencijal<br/>🟢 Stabilna osnova tima]
+            MP3[Vrhunski performer<br/>Visoke performanse<br/>Srednji potencijal<br/>🟢 Zadrži i ceni]
+        end
+        subgraph Nizak_Potencijal[" "]
+            LP1[Slabi performans<br/>Niske performanse<br/>Nizak potencijal<br/>🔴 Akcija potrebna]
+            LP2[Prosek<br/>Srednje performanse<br/>Nizak potencijal<br/>🟡 Održavaj ili razvijaj]
+            LP3[Solidni radnik<br/>Visoke performanse<br/>Nizak potencijal<br/>🟢 Ceni doprinos]
+        end
+    end
+
+    style HP3 fill:#4caf50,color:#fff
+    style HP2 fill:#8bc34a
+    style MP3 fill:#8bc34a
+    style MP2 fill:#cddc39
+    style LP1 fill:#f44336,color:#fff
+```
+
 Istraživanje istaknuto u Harvard Business Review upozorava da stope atricije mogu se udvostručiti nakon većih promena kao što je akvizicija ako zaposleni osećaju neizvesnost oko svog razvoja i budućnosti. Efikasno upravljanje talentima tome se suprotstavlja pružanjem jasnoće i prilika.
 
 Da se poboljšate u upravljanju talentima, lideri bi trebali početi razumevanjem aspiracija i snaga svojih ljudi. Vodite karijerske razgovore: pitajte članove tima gde žele da idu i kako im možete pomoći da tamo stignu. Upoznajte se sa alatima kao što su 9-box gridi (za procenu performansi naspram potencijala) ili pregledi talenata koje mnoga HR odeljenja sprovode.
