@@ -261,6 +261,13 @@
                 </div>
             </div>
 
+            <!-- Floating TTS Button -->
+            <button id="mdbook-tts-fab" type="button" title="Read page aloud (Alt+R)" aria-label="Read page aloud">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+                    <path d="M256 80C141.1 80 48 173.1 48 288s93.1 208 208 208 208-93.1 208-208S370.9 80 256 80zm83.8 211.9l-109.4 61.5c-7.7 4.3-17.4-.9-17.4-9.4V236.4c0-8.5 9.7-13.7 17.4-9.4l109.4 61.5c7.5 4.2 7.5 14.6 0 18.8z"/>
+                </svg>
+            </button>
+
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 {{#if previous}}
                     <a rel="prev" href="{{ path_to_root }}{{previous.link}}" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">

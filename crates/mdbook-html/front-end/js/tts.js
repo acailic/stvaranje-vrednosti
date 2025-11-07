@@ -180,6 +180,8 @@
         const button = document.getElementById('mdbook-tts-toggle');
         const icon = button?.querySelector('svg');
         const controls = document.getElementById('mdbook-tts-controls');
+        const fabButton = document.getElementById('mdbook-tts-fab');
+        const fabIcon = fabButton?.querySelector('svg');
 
         if (!button) return;
 
@@ -190,6 +192,15 @@
             // Change icon to stop/pause icon
             if (icon) {
                 icon.innerHTML = '<path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM192 160H288h32c17.7 0 32 14.3 32 32V320c0 17.7-14.3 32-32 32H288 192 160c-17.7 0-32-14.3-32-32V192c0-17.7 14.3-32 32-32h32z"/>';
+            }
+            // Update FAB button
+            if (fabButton) {
+                fabButton.setAttribute('title', 'Stop reading');
+                fabButton.setAttribute('aria-label', 'Stop reading');
+                fabButton.classList.add('tts-active');
+            }
+            if (fabIcon) {
+                fabIcon.innerHTML = '<path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM192 160H288h32c17.7 0 32 14.3 32 32V320c0 17.7-14.3 32-32 32H288 192 160c-17.7 0-32-14.3-32-32V192c0-17.7 14.3-32 32-32h32z"/>';
             }
             // Show controls
             if (controls) {
@@ -202,6 +213,15 @@
             // Change icon to play/speaker icon
             if (icon) {
                 icon.innerHTML = '<path d="M256 80C141.1 80 48 173.1 48 288s93.1 208 208 208 208-93.1 208-208S370.9 80 256 80zm83.8 211.9l-109.4 61.5c-7.7 4.3-17.4-.9-17.4-9.4V236.4c0-8.5 9.7-13.7 17.4-9.4l109.4 61.5c7.5 4.2 7.5 14.6 0 18.8z"/>';
+            }
+            // Update FAB button
+            if (fabButton) {
+                fabButton.setAttribute('title', 'Read page aloud (Alt+R)');
+                fabButton.setAttribute('aria-label', 'Read page aloud');
+                fabButton.classList.remove('tts-active');
+            }
+            if (fabIcon) {
+                fabIcon.innerHTML = '<path d="M256 80C141.1 80 48 173.1 48 288s93.1 208 208 208 208-93.1 208-208S370.9 80 256 80zm83.8 211.9l-109.4 61.5c-7.7 4.3-17.4-.9-17.4-9.4V236.4c0-8.5 9.7-13.7 17.4-9.4l109.4 61.5c7.5 4.2 7.5 14.6 0 18.8z"/>';
             }
             // Hide controls
             if (controls) {
@@ -229,6 +249,15 @@
     const ttsButton = document.getElementById('mdbook-tts-toggle');
     if (ttsButton) {
         ttsButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            speak();
+        });
+    }
+
+    // Initialize FAB button
+    const ttsFabButton = document.getElementById('mdbook-tts-fab');
+    if (ttsFabButton) {
+        ttsFabButton.addEventListener('click', function(e) {
             e.preventDefault();
             speak();
         });
