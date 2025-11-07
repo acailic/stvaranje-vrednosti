@@ -53,13 +53,20 @@ h1 {
     font-weight: 700;
     margin-block-start: 0;
     margin-block-end: 0.8em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--brand-primary);
     position: relative;
     padding-bottom: 0.3em;
 }
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    h1 {
+        background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
 h1::after {
     content: '';
     position: absolute;
@@ -67,7 +74,7 @@ h1::after {
     left: 0;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
     border-radius: 2px;
 }
 h2 {
@@ -86,7 +93,7 @@ h2::before {
     transform: translateY(-50%);
     width: 4px;
     height: 70%;
-    background: linear-gradient(180deg, #667eea, #764ba2);
+    background: linear-gradient(180deg, var(--brand-primary), var(--brand-secondary));
     border-radius: 2px;
 }
 h3 {
@@ -175,24 +182,28 @@ html:not(.js) .page-wrapper,
 }
 .content a:hover {
     text-decoration: none;
-    color: var(--links-hover, #667eea);
+    color: var(--links-hover, var(--brand-primary));
 }
-.content a:not(.header):hover::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    animation: slideIn 0.3s ease;
-}
-@keyframes slideIn {
-    from {
-        transform: scaleX(0);
+
+@media (prefers-reduced-motion: no-preference) {
+    .content a:not(.header):hover::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+        animation: slideIn 0.3s ease;
     }
-    to {
-        transform: scaleX(1);
+
+    @keyframes slideIn {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
     }
 }
 .content img, .content video {
@@ -242,9 +253,9 @@ blockquote {
     padding: 1.2em 20px;
     color: var(--fg);
     background: linear-gradient(135deg, var(--quote-bg) 0%, var(--quote-bg) 100%);
-    border-left: 4px solid #667eea;
+    border-left: 4px solid var(--brand-primary);
     border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 2px 8px var(--inline-code-bg);
     position: relative;
 }
 blockquote::before {
@@ -253,7 +264,7 @@ blockquote::before {
     top: -10px;
     left: 10px;
     font-size: 3em;
-    color: #667eea;
+    color: var(--brand-primary);
     opacity: 0.3;
     font-family: Georgia, serif;
 }
@@ -517,7 +528,7 @@ dd > p {
 }
 
 .content ul > li::marker {
-    color: #667eea;
+    color: var(--brand-primary);
     font-weight: bold;
 }
 
@@ -527,23 +538,25 @@ dd > p {
 }
 
 .content ol > li::marker {
-    color: #667eea;
+    color: var(--brand-primary);
     font-weight: bold;
 }
 
 /* Smooth page transitions */
-.content main {
-    animation: fadeIn 0.4s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
+@media (prefers-reduced-motion: no-preference) {
+    .content main {
+        animation: fadeIn 0.4s ease-in;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 
@@ -556,11 +569,11 @@ dd > p {
 
 /* Better code inline styling */
 .content code:not(.hljs) {
-    background-color: var(--inline-code-bg, rgba(102, 126, 234, 0.1));
+    background-color: var(--inline-code-bg);
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    border: 1px solid var(--inline-code-border);
 }
 
 /* Navigation arrows enhancement */
