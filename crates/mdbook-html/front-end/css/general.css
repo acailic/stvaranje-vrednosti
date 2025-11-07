@@ -12,6 +12,7 @@ html {
     background-color: var(--bg);
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,8 +48,64 @@ h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
 .hide-boring .boring { display: none; }
 .hidden { display: none !important; }
 
-h2, h3 { margin-block-start: 2.5em; }
-h4, h5 { margin-block-start: 2em; }
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0.8em;
+    color: var(--brand-primary);
+    position: relative;
+    padding-bottom: 0.3em;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    h1 {
+        background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+    border-radius: 2px;
+}
+h2 {
+    margin-block-start: 2.5em;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--fg);
+    position: relative;
+    padding-left: 1em;
+}
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(180deg, var(--brand-primary), var(--brand-secondary));
+    border-radius: 2px;
+}
+h3 {
+    margin-block-start: 2.5em;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--fg);
+}
+h4, h5 {
+    margin-block-start: 2em;
+    font-weight: 600;
+}
 
 .header + .header h3,
 .header + .header h4,
@@ -105,12 +162,56 @@ html:not(.js) .page-wrapper,
     margin-inline-end: auto;
     max-width: var(--content-max-width);
 }
-.content p { line-height: 1.45em; }
-.content ol { line-height: 1.45em; }
-.content ul { line-height: 1.45em; }
-.content a { text-decoration: none; }
-.content a:hover { text-decoration: underline; }
-.content img, .content video { max-width: 100%; }
+.content p {
+    line-height: 1.7em;
+    margin-bottom: 1.2em;
+}
+.content ol {
+    line-height: 1.7em;
+    margin-bottom: 1.2em;
+}
+.content ul {
+    line-height: 1.7em;
+    margin-bottom: 1.2em;
+}
+.content a {
+    text-decoration: none;
+    color: var(--links);
+    position: relative;
+    transition: color 0.2s ease;
+}
+.content a:hover {
+    text-decoration: none;
+    color: var(--links-hover, var(--brand-primary));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .content a:not(.header):hover::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+        animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+}
+.content img, .content video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1.5em 0;
+}
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
@@ -149,11 +250,23 @@ table tbody tr:nth-child(2n) {
 
 blockquote {
     margin: 20px 0;
-    padding: 0 20px;
+    padding: 1.2em 20px;
     color: var(--fg);
-    background-color: var(--quote-bg);
-    border-block-start: .1em solid var(--quote-border);
-    border-block-end: .1em solid var(--quote-border);
+    background: linear-gradient(135deg, var(--quote-bg) 0%, var(--quote-bg) 100%);
+    border-left: 4px solid var(--brand-primary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px var(--inline-code-bg);
+    position: relative;
+}
+blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 3em;
+    color: var(--brand-primary);
+    opacity: 0.3;
+    font-family: Georgia, serif;
 }
 
 /* TODO: Remove .warning in a future version of mdbook, it is replaced by
@@ -405,4 +518,69 @@ dd > p {
     fill: currentColor;
     /* Add some space between the icon and the text. */
     margin-right: 8px;
+}
+
+/* Enhanced List Styling */
+.content ul > li {
+    position: relative;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.content ul > li::marker {
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+
+.content ol > li {
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.content ol > li::marker {
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+
+/* Smooth page transitions */
+@media (prefers-reduced-motion: no-preference) {
+    .content main {
+        animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Enhanced strong/bold text */
+.content strong {
+    font-weight: 600;
+    color: var(--fg);
+    position: relative;
+}
+
+/* Better code inline styling */
+.content code:not(.hljs) {
+    background-color: var(--inline-code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    border: 1px solid var(--inline-code-border);
+}
+
+/* Navigation arrows enhancement */
+.nav-chapters {
+    transition: all 0.3s ease;
+}
+
+.nav-chapters:hover {
+    transform: scale(1.05);
 }
