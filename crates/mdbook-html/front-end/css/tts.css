@@ -216,6 +216,47 @@
     height: 16px;
 }
 
+/* Pause and Stop buttons */
+#mdbook-tts-pause,
+#mdbook-tts-stop {
+    background: none;
+    border: none;
+    color: var(--icons);
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+#mdbook-tts-pause:hover:not(:disabled),
+#mdbook-tts-stop:hover:not(:disabled) {
+    color: var(--icons-hover);
+    background: var(--sidebar-non-existant);
+    transform: scale(1.1);
+}
+
+#mdbook-tts-pause:active:not(:disabled),
+#mdbook-tts-stop:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+#mdbook-tts-pause:disabled,
+#mdbook-tts-stop:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+#mdbook-tts-pause svg,
+#mdbook-tts-stop svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    transition: fill 0.2s ease;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     #mdbook-tts-controls {
