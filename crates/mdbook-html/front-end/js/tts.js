@@ -176,12 +176,31 @@
         updateButton();
     }
 
+    function pause() {
+        if (isPlaying && !isPaused) {
+            synth.pause();
+            isPaused = true;
+            updateButton();
+        }
+    }
+
+    function resume() {
+        if (isPaused) {
+            synth.resume();
+            isPaused = false;
+            updateButton();
+        }
+    }
+
     function updateButton() {
         const button = document.getElementById('mdbook-tts-toggle');
         const icon = button?.querySelector('svg');
         const controls = document.getElementById('mdbook-tts-controls');
         const fabButton = document.getElementById('mdbook-tts-fab');
         const fabIcon = fabButton?.querySelector('svg');
+        const pauseButton = document.getElementById('mdbook-tts-pause');
+        const pauseIcon = pauseButton?.querySelector('svg path');
+        const stopButton = document.getElementById('mdbook-tts-stop');
 
         if (!button) return;
 
@@ -206,6 +225,47 @@
             if (controls) {
                 controls.classList.add('visible');
             }
+            // Enable pause and stop buttons
+            if (pauseButton) {
+                pauseButton.disabled = false;
+                pauseButton.setAttribute('title', 'Pause reading');
+                pauseButton.setAttribute('aria-label', 'Pause reading');
+                // Pause icon (two bars)
+                if (pauseIcon) {
+                    pauseIcon.setAttribute('d', 'M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z');
+                }
+            }
+            if (stopButton) {
+                stopButton.disabled = false;
+            }
+        } else if (isPaused) {
+            // Paused state
+            button.setAttribute('title', 'Resume reading');
+            button.setAttribute('aria-label', 'Resume reading');
+            button.classList.add('tts-active');
+            // Update FAB button
+            if (fabButton) {
+                fabButton.setAttribute('title', 'Resume reading');
+                fabButton.setAttribute('aria-label', 'Resume reading');
+                fabButton.classList.add('tts-active');
+            }
+            // Show controls
+            if (controls) {
+                controls.classList.add('visible');
+            }
+            // Update pause button to show resume icon
+            if (pauseButton) {
+                pauseButton.disabled = false;
+                pauseButton.setAttribute('title', 'Resume reading');
+                pauseButton.setAttribute('aria-label', 'Resume reading');
+                // Play/resume icon
+                if (pauseIcon) {
+                    pauseIcon.setAttribute('d', 'M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z');
+                }
+            }
+            if (stopButton) {
+                stopButton.disabled = false;
+            }
         } else {
             button.setAttribute('title', 'Read page aloud (Alt+R)');
             button.setAttribute('aria-label', 'Read page aloud');
@@ -226,6 +286,13 @@
             // Hide controls
             if (controls) {
                 controls.classList.remove('visible');
+            }
+            // Disable pause and stop buttons
+            if (pauseButton) {
+                pauseButton.disabled = true;
+            }
+            if (stopButton) {
+                stopButton.disabled = true;
             }
         }
     }
@@ -282,6 +349,28 @@
     const speedDisplay = document.getElementById('mdbook-tts-speed-value');
     if (speedDisplay) {
         speedDisplay.textContent = currentSpeed.toFixed(1) + 'x';
+    }
+
+    // Initialize pause button
+    const pauseButton = document.getElementById('mdbook-tts-pause');
+    if (pauseButton) {
+        pauseButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (isPaused) {
+                resume();
+            } else {
+                pause();
+            }
+        });
+    }
+
+    // Initialize stop button
+    const stopButton = document.getElementById('mdbook-tts-stop');
+    if (stopButton) {
+        stopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            stop();
+        });
     }
 
     // Keyboard shortcut: Alt+R to toggle reading
